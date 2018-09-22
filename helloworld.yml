@@ -9,5 +9,5 @@ spec:
   - name: helloworld
     image: gokeobasa/simple-express-app
     ports:
-    - name: helloworld
+    - name: nodejs-port
       containerPort: 3000
