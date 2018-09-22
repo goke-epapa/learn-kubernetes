@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: helloworld.kubernetes.adegokeobasa.me
+  labels:
+    app: helloworld
+spec:
+  containers:
+  - name: helloworld
+    image: gokeobasa/simple-express-app
+    ports:
+    - name: helloworld
+      containerPort: 3000
