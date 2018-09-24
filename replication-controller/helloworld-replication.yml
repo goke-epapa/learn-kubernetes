@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: helloworld-controller
+spec:
+  replicas: 2
+  selector:
+    app: helloworld
+  template:
+    metadata:
+      labels:
+        app: helloworld
+    spec:
+      containers:
+      - name: simple-express-app
+        image: gokeobasa/simple-express-app
+        ports:
+        - name: nodejs-port
+          containerPort: 3000
+
+
+
