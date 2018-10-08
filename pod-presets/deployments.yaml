@@ -10,8 +10,8 @@ spec:
         app: myapp
     spec:
       containers:
-      - name: k8s-demo
-        image: wardviaene/k8s-demo
+      - name: simple-express-app
+        image: gokeobasa/simple-express-app
         ports:
         - name: nodejs-port
           containerPort: 3000
